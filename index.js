@@ -26,14 +26,13 @@ function getWeather() {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
 
-    let url =`${apiUrl}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+    let url =`${apiUrl}?lat=${latitude}?lon=${longitude}&appid=${apiKey}&units=imperial`;
 
     fetch(url)
       .then(response => response.json())
       .then(data => {
         console.log(data);
-        let temp = data.main.temp;
-        temperature.innerHTML = temp + "° C";
+        temperature.innerHTML =  `${Math.round(data.main.temp)}° C`;
         location.innerHTML = data.name;
         description.innerHTML = data.weather[0].main;
       });
