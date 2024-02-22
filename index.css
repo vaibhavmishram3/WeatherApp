@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#000,rgb(238, 0, 255));
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pre-weather-info,.weather-info{
+    overflow: hidden;
+    border: 2px solid #938f8f;
+    border-radius: 10px;
+    /* padding: 40px; */
+    height: 600px;
+    width: 500px;
+    background: #2d2b2b;
+}
+
+#wed{
+    border-bottom: 1px solid rgb(104, 84, 84);
+    padding: 10px 15px;
+    /* background: red; */
+    color: rgb(179, 179, 0);
+}
+
+.weather-info .search-container{
+    width: 100%;
+    height: 180px;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.weather-info .search-container .inp{
+    height: 60px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #000;
+}
+
+#btn{
+    cursor: pointer;
+    color: #fff;
+    background: rgb(67, 67, 235);
+}
+
+.preinn,.inn{
+    padding: 14px 0;
+    text-align: center;
+}
+
+.preinn{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 20px 0;
+}
+
+.weather-info .icon #img{
+    height: 17vh;
+}
+
+.pre-weather-info .preicon #preimg{
+    margin-top: 20px;
+    height: 23vh;
+}
+
+#temperature{
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+#pretemperature{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+#predecription,#description{
+    font-size: 20px;
+}
+
+.loc{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#prelocation,#location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.inn1{
+    /* background: #000; */
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pretime,#prewind,#time,#wind{
+    width: 100%;
+    height: 100%;
+    /* background: #000; */
+    border: 1px solid rgb(104, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
